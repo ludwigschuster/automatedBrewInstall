@@ -45,7 +45,6 @@ function installBrewPackages {
 		'git'
 		'gnupg2'
 		'gnuplot'
-		'gp2'
 		'imagemagick'
 		'mobile-shell'
 		'nmap'
