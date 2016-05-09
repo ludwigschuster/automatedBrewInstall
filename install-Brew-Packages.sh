@@ -49,6 +49,7 @@ function installBrewPackages {
 		'mobile-shell'
 		'nmap'
 		'python'
+		'pv'
 		'ruby'
 		'vim'
 		'wget'
