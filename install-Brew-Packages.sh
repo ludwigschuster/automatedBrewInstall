@@ -40,6 +40,7 @@ function oldInstallHomeBrew {
 
 function installBrewPackages {
 	declare -a BrewPackages=(
+		'ddrescue'
 		'ffmpeg'
 		'gcc'
 		'git'
