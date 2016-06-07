@@ -105,6 +105,7 @@ function installBrewCaskPackages {
 		'evernote'
 		'fluid'
 		'firefox'
+		'fritzing'
 		'garmin-communicator'
 		'ghc'
 		'gimp'
