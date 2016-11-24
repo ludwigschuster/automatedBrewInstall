@@ -66,14 +66,15 @@ function checkHomeBrew {
 }
 function removeHomeBrew {
   echo "Homebrew wird jetzt entfernt."
-	ruby -e "ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)""
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 }
 function installBrewPackages {
 	declare -a BrewPackages=(
+    'curl'
+    'git'
     'docker'
     'ffmpeg'
 		'gcc'
-    'git'
 		'mas'
 		'nmap'
 		'pv'
