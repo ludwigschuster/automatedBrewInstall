@@ -48,6 +48,7 @@ function installBrewPackages {
 		'gnupg2'
 		'gnuplot'
 		'imagemagick'
+		'mas'
 		'mobile-shell'
 		'nmap'
 		'python'
@@ -55,6 +56,12 @@ function installBrewPackages {
 		'ruby'
 		'vim'
 		'wget'
+		# packages for Kivy - a Python GUI Framework
+		'sdl2'
+		'sdl2_image'
+		'sdl2_ttf'
+		'sdl2_mixer'
+		'gstreamer'
 	)
 	for i in "${BrewPackages[@]}"
 	do
@@ -72,6 +79,7 @@ function installPythonPackages {
 	declare -a PythonPackages=(
 		'openslides'
 		'selenium'
+		'-I Cython==0.23'
 );
 
 	for i in "${PythonPackages[@]}"
@@ -85,6 +93,7 @@ function installPythonPackages {
 		echo "$i erfolgreich installiert"
 		echo "================================================"
 	done
+	USE_OSX_FRAMEWORKS=0 pip install kivy #to get Kivy installed
 }
 function installBrewCaskPackages {
 	declare -a BrewCaskPackages=(
@@ -92,6 +101,7 @@ function installBrewCaskPackages {
 		'adobe-photoshop-lightroom'
 		'adobe-reader'
 		'airmail-amt'
+		'alfred'
 		'amazon-cloud-drive'
 		'appcleaner'
 		'atom'
@@ -106,6 +116,7 @@ function installBrewCaskPackages {
 		'evernote'
 		'fluid'
 		'firefox'
+		'franz'
 		'fritzing'
 		'garmin-communicator'
 		'ghc'
