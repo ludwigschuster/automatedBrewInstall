@@ -73,6 +73,7 @@ function installBrewPackages {
     'docker'
     'ffmpeg'
 		'gcc'
+    'git'
 		'mas'
 		'nmap'
 		'pv'
